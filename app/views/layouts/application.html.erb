@@ -7,7 +7,7 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "/javascript/packs/application.js", "data-turbo-track": "reload", defer: true %> 
-
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%
 =begin%>
  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
@@ -18,8 +18,7 @@
   <body>
 <%= render 'layouts/navigation' %>
 <div class="container ">
-<%=render 'layouts/message' %>
-
+<%=render 'layouts/messages' %>
     <%= yield %>
     </div>
   </body>
